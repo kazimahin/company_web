@@ -1,0 +1,22 @@
+ 
+.intro-2 {
+  height: 100vh;
+}
+
+@media (max-width: 740px) {
+ 
+  .intro-2 {
+    height: 900px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+
+ 
+  .intro-2 {
+    height: 980px;
+  }
+}
+.software-lp .rgba-gradient {
+    background: linear-gradient(45deg,#68d0ff,#453cf5);
+}
