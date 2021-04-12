@@ -78,7 +78,7 @@ class MakeMyApp extends Component {
        e.preventDefault()
 
        console.log(this.state.form);
-        axios.post(window.location.origin+"/api/makemyapp",this.state.form)
+        axios.post(window.location.origin+"/api/com/makemyapp",this.state.form)
            .then(v=>{
                
 

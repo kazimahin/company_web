@@ -18,7 +18,7 @@ class Dashbord extends Component {
 
     
     componentDidMount(){
-        axios.post(window.location.origin+"/api/com_data/sites")
+        axios.post(window.location.origin+"/api/com/instdata")
             .then((v)=>{
                 this.setState({
                     details:v.data

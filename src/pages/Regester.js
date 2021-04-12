@@ -31,7 +31,7 @@ import AddUserAction from '../redux/action/AdduserAuth.action';
 
     submitHandler=(e)=>{
        e.preventDefault()
-        axios.post(window.location.origin+"/api/com_auth/regester",{name:this.state.name,phone:this.state.phone,email: this.state.email,re_password:this.state.re_password, password: this.state.password},{withCredentials:true})
+        axios.post(window.location.origin+"/api/com/auth/register",{name:this.state.name,phone:this.state.phone,email: this.state.email,re_password:this.state.re_password, password: this.state.password},{withCredentials:true})
            .then(v=>{
                this.setState({
                    error:{value:null,err:{}},

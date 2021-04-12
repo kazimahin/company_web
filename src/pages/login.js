@@ -29,7 +29,7 @@ class login extends Component {
 
     submitHandler=(e)=>{
        e.preventDefault()
-        axios.post(window.location.origin+"/api/com_auth/login",{email: this.state.email, password: this.state.password},{withCredentials:true})
+        axios.post(window.location.origin+"/api/com/auth/login",{email: this.state.email, password: this.state.password},{withCredentials:true})
            .then(v=>{
                this.setState({
                    error:{value:null,err:{}},

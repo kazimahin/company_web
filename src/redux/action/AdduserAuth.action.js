@@ -11,7 +11,7 @@ const AddUserAction=()=>{
 
 
 
-        axios.post(window.location.origin+"/api/com_auth/cheak",{},{withCredentials:true} )
+        axios.post(window.location.origin+"/api/com/auth/verify",{},{withCredentials:true} )
         .then(value=>{
             console.log(value)
             dispatch({
